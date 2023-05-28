@@ -14,4 +14,4 @@ jobs:
     - name: Show password
       env:
         MY_PASSWORD: ${{ secrets.PASSWORD }}
-      run: ehco "password => $MY_PASSWORD"
+      run: echo "password => $MY_PASSWORD"
