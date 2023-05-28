@@ -1,0 +1,13 @@
+name: Github Checkout
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Show commit Id
+      env:
+        COMMIT_ID: ${{ github.sha }}
+      run: echo "commit id => $COMMIT_ID"
