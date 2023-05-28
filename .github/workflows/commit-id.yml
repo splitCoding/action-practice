@@ -1,4 +1,4 @@
-name: Github Checkout
+name: show commit it
 
 on: [push]
 
